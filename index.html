@@ -1,0 +1,1065 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio - Wahyu Hidayat</title>
+
+    <!-- bootstrap css cdn link  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+
+    <!-- custom css file -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
+
+    <!-- bootstrap icon cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
+    />
+
+    <!-- for adding animation to website we have use AOS library 
+    AOS Library css file cdn link -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- jquery cdn link  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+ 
+ 
+  </head>
+  <body>
+    <!-- navbar starts -->
+    <nav
+      id="navbar-top"
+      class="navbar navbar-expand-lg navbar-light bg-white sticky-top"
+    >
+      <div class="container-fluid px-5">
+        <a class="navbar-brand fw-bold fs-2" href="#" style="color: #3f396d"
+          >Wahyu Hidayat</a
+        >
+        <button
+          class="nav-menu d-md-none"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <i class="bi bi-menu-button-fill"></i>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav gap-4" style="font-size: 1.1rem">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#service">Service</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#testimonial">Testimonials</a>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="#blog">Blog</a>
+            </li> -->
+          </ul>
+        </div>
+        <button class="c-btn ms-4 py-2 px-4 rounded-pill d-none d-md-block">
+          <a href="https://wa.me/6282284352106" target="_blank" class="text-white text-decoration-none">Contact</a>
+        </button>
+        
+      </div>
+    </nav>
+    <!-- navbar ends here -->
+
+    <!-- home section starts  -->
+    <section class="home pt-5 pb-5" id="home">
+      <div class="row justify-content-evenly align-middle">
+        <!-- here data-aos is used for adding aos animation  -->
+        <div class="col-10 col-md-6 text-center text-md-start" data-aos="slide-right">
+          <h2 style="color: #3f396d">
+            Hello! I Am <br /><span class="c-orange">Wahyu Hidayat</span>
+          </h2>
+          <p class="text-muted">
+            I'm A Full Stack Developer | Mobile Developer having 3 years of experience in expertise of
+            creating website with fully responsive Also with backend part too.
+          </p>
+          <button class="c-btn h-btn mt-3 py-3 px-5 rounded-pill">
+            Hire Me
+          </button>
+          <a href="" class="link ms-4 d-none">See My Work</a>
+        </div>
+        <div class="col-10 col-md-4 d-none d-md-block">
+          <img src="images/wahyu.png" class="img-fluid" alt="" />
+        </div>
+      </div>
+    </section>
+    <!-- home section ends here -->
+
+    <!-- expertise section starts -->
+    <section class="expertise mt-5" id="service">
+      <div class="heading text-center">
+        <small>Our Expertise</small>
+        <h3>
+          Offering a Wide Range of <br />
+          Cutting-Edge Digital Services
+        </h3>
+      </div>
+      <div class="row justify-content-evenly mt-5">
+        <!-- Web Design -->
+        <div class="col-10 col-md-4" data-aos="fade-up">
+          <div class="service-card">
+            <div class="img">
+              <img
+                src="images/webdesign.png"
+                class="w-25 img-fluid img"
+                alt="Web Design"
+              />
+            </div>
+            <div class="content mt-3">
+              <h4>Web Design</h4>
+              <p class="text-muted">
+                Transforming your ideas into stunning, user-friendly designs that not only look amazing but also deliver exceptional user experiences.
+              </p>
+              <a href="#" class="link">Discover More</a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Web Development -->
+        <div class="col-md-4 col-10" data-aos="fade-up">
+          <div class="service-card">
+            <div class="img">
+              <img
+                src="images/webdevelopment.png"
+                class="w-25 img-fluid img"
+                alt="Web Development"
+              />
+            </div>
+            <div class="content mt-3">
+              <h4>Web Development</h4>
+              <p class="text-muted">
+                Building robust, scalable websites and web applications that empower your business with seamless functionality and performance.
+              </p>
+              <a href="#" class="link">Learn More</a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Mobile Development -->
+        <div class="col-md-4 col-10" data-aos="fade-up">
+          <div class="service-card">
+            <div class="img">
+              <img
+                src="images/service-icon4.png"
+                class="w-25 img-fluid img"
+                alt="Mobile Development"
+              />
+            </div>
+            <div class="content mt-3">
+              <h4>Mobile Development</h4>
+              <p class="text-muted">
+                Creating seamless mobile experiences with high-performance, responsive mobile apps designed for Android and iOS that elevate user engagement.
+              </p>
+              <a href="#" class="link">Explore More</a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Debugging -->
+        <div class="col-md-4 col-10" data-aos="fade-up">
+          <div class="service-card">
+            <div class="img">
+              <img
+                src="images/service-icon3.png"
+                class="w-25 img-fluid img"
+                alt="Debugging"
+              />
+            </div>
+            <div class="content mt-3">
+              <h4>Debugging</h4>
+              <p class="text-muted">
+                Quickly identifying and fixing bugs to ensure your website or app performs flawlessly, keeping your users happy and engaged.
+              </p>
+              <a href="#" class="link">Find Out More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- expertise section ends here -->
+
+    <!-- skill section starts -->
+    <section class="skill mt-5 py-5" id="about">
+      <div class="row justify-content-evenly">
+        <div class="col-10 col-md-5 skill-with-progress" data-aos="slide-right">
+          <div class="row justify-content-evenly">
+            <div class="col-10 col-md-6">
+              <div class="progress-card ms-3 ms-md-0">
+                <div class="circular-progress html-css">
+                  <span class="progress-value html-progress">0%</span>
+                </div>
+                <br />
+                <span class="text">WebDevelopment</span>
+              </div>
+            </div>
+            <div class="col-10 col-md-6 mt-4 mt-md-0">
+              <div class="progress-card ms-3 ms-md-0">
+                <div class="circular-progress javascript">
+                  <span class="progress-value javascript-progress">0%</span>
+                </div>
+                <br />
+                <span class="text">Full Stack JavaScript</span>
+              </div>
+            </div>
+            
+          </div>
+          <div class="row justify-content-evenly mt-4">
+            <div class="col-10 col-md-6">
+              <div class="progress-card ms-3 ms-md-0">
+                <div class="circular-progress php">
+                  <span class="progress-value php-progress">0%</span>
+                </div>
+                <br />
+                <span class="text">Mobile Development</span>
+              </div>
+            </div>
+            <div class="col-10 col-md-6 mt-4 mt-md-0">
+              <div class="progress-card ms-3  ms-md-0">
+                <div class="circular-progress reactjs">
+                  <span class="progress-value reactjs-progress">0%</span>
+                </div>
+                <br>
+                <span class="text">Business Development </span>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        <div class="col-10 col-md-5 skill-detail" data-aos="slide-left">
+          <div class="heading mt-5 mt-md-3">
+            <small>My Skills</small>
+            <h3>Beautiful & Unique Digital Experiences</h3>
+            <p class="text-muted">
+              With over 3 years of experience in full-stack engineering and a passion for innovative digital solutions, I excel in project management, designing scalable systems, and leading teams to deliver high-quality results. From web design to complex backend architecture, I create seamless, user-centered solutions that drive business growth.
+            </p>
+            <p class="text-muted">
+              As a Project Manager, I thrive in coordinating and executing digital initiatives, ensuring alignment with business goals and technical requirements. My expertise in system architecture, development cycles, and team collaboration empowers businesses to stay ahead in an ever-evolving digital landscape.
+            </p>
+            <p class="text-muted">
+              I am also skilled in HRD (Human Resource Development) strategies, leveraging my experience in managing cross-functional teams, fostering talent growth, and implementing effective training programs that enhance productivity and innovation within organizations.
+            </p>
+            <p class="text-muted">
+              Currently, as CEO of Nusatrack, I am spearheading the development of advanced IoT systems and sensor technologies. We are continuously innovating and improving our solutions to address the growing demand for intelligent, connected systems. Our focus is on creating scalable and reliable solutions that empower businesses to leverage IoT for smarter decision-making and operational efficiency.
+            </p>
+            <button class="c-btn h-btn mt-3 py-3 px-5 rounded-pill">
+              
+              <a href="cv-wahyuhidayat.pdf" download="SampleCV" style="text-decoration: none;color: #fff;">Download CV</a>
+            </button>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+   
+
+    <!-- portfolio section starts here -->
+    <section class="portfolio" id="portfolio">
+      <div class="heading text-center pt-5">
+        <small>Creative Work</small>
+        <h3>Check My Portfolio</h3>
+      </div>
+
+      <div id="myBtnContainer" class="text-center mt-4">
+    
+        <button class="filter-item" data-filter="all">All</button>
+        <!-- <button class="filter-item" data-filter="game">Game</button> -->
+        <button class="filter-item" data-filter="webapp">Web App</button>
+        <button class="filter-item" data-filter="website">Website</button>
+        <button class="filter-item" data-filter="certificate">Certificate</button>
+      </div>
+      <div class="portfolio-body">
+        <div class="row justify-content-evenly px-4">
+          <!-- Modal for image zoom -->
+<div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-center">
+        <!-- Larger version of the image to zoom -->
+        <img src="images/msal.jpg" alt="IP Networking & Network Monitoring Application" class="img-fluid" id="zoomImage" />
+      </div>
+    </div>
+  </div>
+</div>
+
+          <div class="post col-md-4 website all col-10 mt-3 mt-md-0" >
+            <div class="card">
+                <img src="images/webtracking.png" class="card-img-top" alt="Preview of Web Tracking GPS application" />
+                <div class="card-body text-center">
+                    <h4 class="card-title">Web TrackingGPS</h4>
+                    <p class="card-text">A comprehensive GPS tracking web app designed for real-time monitoring and location tracking.</p>
+                    <span class="badge bg-secondary badge-pill">HTML & CSS & Tailwind</span>
+                    <span class="badge bg-secondary badge-pill">JavaScript - ReactJS</span>
+                    <span class="badge bg-secondary badge-pill">Node.js | Express.js - PostgreSQL</span>
+                    <span class="badge bg-secondary badge-pill mb-2">Website TrackingGPS</span><br />
+                    <a href="https://nusatrackindonesia.netlify.app/" class="link">Read More</a>
+                </div>
+            </div>
+        </div>
+        
+          <div class="post col-md-4 webapp all col-10 mt-3 mt-md-0" >
+            <div class="card">
+                <img src="images/gaji.png" class="card-img-top" alt="Payroll application preview" />
+                <div class="card-body text-center">
+                    <h4 class="card-title">Payroll System</h4>
+                    <p class="card-text">Efficient payroll management for teachers at PPS Ibnu Mas'ud Kampar, with seamless salary calculations and reporting.</p>
+                    <span class="badge bg-secondary badge-pill">HTML&CSS</span>
+                    <span class="badge bg-secondary badge-pill">JavaScript-ReactJS</span>
+                    <span class="badge bg-secondary badge-pill mb-2">Website</span><br />
+                    <a href="https://gaji-ibnu-masud-kampar.vercel.app" class="read-more-btn link">Read More</a>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="post col-md-4 webapp all col-10 mt-3 mt-md-0" >
+          <div class="card">
+              <img src="images/animasi.png" class="card-img-top" alt="Animation project preview" />
+              <div class="card-body text-center">
+                  <h4 class="card-title">Timeline Animasi Proyek</h4>
+                  <p class="card-text">A project that demonstrates an animation timeline using ReactJS for the front-end, ExpressJS for the back-end, PostgreSQL for the database, and Bootstrap for responsive design.</p>
+                  <span class="badge bg-secondary badge-pill">HTML & CSS</span>
+                  <span class="badge bg-secondary badge-pill">JavaScript</span>
+                  <span class="badge bg-secondary badge-pill">ReactJS</span>
+                  <span class="badge bg-secondary badge-pill">ExpressJS</span>
+                  <span class="badge bg-secondary badge-pill">PostgreSQL</span>
+                  <span class="badge bg-secondary badge-pill mb-2">WebApp</span><br />
+                  <a href="https://aplikasi-timeline-project-animasi.vercel.app/story-script" class="read-more-btn link">Read More</a>
+              </div>
+          </div>
+      </div>
+      <div class="post col-md-4 webapp all col-10 mt-3 mt-md-0" >
+        <div class="card">
+          <img src="images/nusa.png" class="card-img-top" alt="..." />
+          <div class="card-body text-center">
+            <h4 class="card-title">FleetManagement +Tracking CAR With IOT</h4>
+            <p class="card-text">A fleet management and vehicle tracking system enhanced with IoT technologies. This web app allows real-time GPS tracking of vehicles, and offers advanced features such as remote engine shutdown, vehicle alarm system, fuel level detection, and camera tracking for added security. The system also supports real-time monitoring of fleet operations, helping businesses optimize vehicle usage. Built with ReactJS for the front-end, NodeJS & ExpressJS for the back-end, and PostgreSQL for database management. It is deployed on AWS Cloud for scalability and reliability.</p>
+
+            <span class="badge bg-secondary badge-pill">HTML&CSS&Bootstrapp</span>
+            <span class="badge bg-secondary badge-pill">JavaScript&ReactJS</span>
+            <span class="badge bg-secondary badge-pill">NodeJS&ExpressJS</span>
+            <span class="badge bg-secondary badge-pill">Postgreesql&AWSCloud</span>
+            <span class="badge bg-secondary badge-pill mb-2">WebApp</span
+            ><br />
+            <a href="https://github.com/wahyuhidayadddd/fleetmanagement_nusatrack" class="read-more-btn link">Read More</a>
+          </div>
+        </div>
+      </div>
+      <div class="post col-md-4 webapp col-10 mt-3 mt-md-0" >
+        <div class="card text-center">
+          <img src="images/cekongkir.png" class="card-img-top" alt="Aplikasi Cek Ongkir" />
+          <div class="card-body text-center">
+            <h4 class="card-title">Postage Check</h4>
+            <p class="card-text">
+              Aplikasi Cek Ongkir is a web application built to help users easily check shipping costs from multiple logistics providers, such as JNE, J&T, and Ninja Van. This application fetches data from multiple APIs, including the popular RajaOngkir API, to provide accurate and real-time shipping cost estimates.
+            </p>
+            <p>
+              Users can input the origin and destination, as well as the weight of their package, to instantly get shipping rates from various carriers.
+            </p>
+            <span class="badge bg-secondary badge-pill">HTML & CSS</span>
+            <span class="badge bg-secondary badge-pill">JavaScript & ReactJS</span>
+            <span class="badge bg-secondary badge-pill mb-2">Web App</span><br />
+            <a href="https://aplikasicekongkir.netlify.app/" class="read-more-btn link" target="_blank">Read More</a>
+          </div>
+        </div>
+      </div>
+      <div class="post col-md-4 webapp col-10 mt-3 mt-md-0">
+        <div class="card text-center">
+          <!-- Clickable image that opens in a modal -->
+          <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal">
+            <img src="images/msal.jpg" class="card-img-top" alt="IP Networking & Network Monitoring Application" style="cursor: pointer;" />
+          </a>
+          <div class="card-body text-center">
+            <h4 class="card-title">IP Networking & Network Monitoring Application</h4>
+            <p class="card-text">
+              The **IP Networking & Network Monitoring Application** is a platform designed to help businesses efficiently manage and monitor their network infrastructure. This application allows for clear visualization of network topology and real-time device monitoring, ensuring smooth operational continuity.
+            </p>
+            <p>
+              With asset management features using **barcode** and **QR code** scanning, this application facilitates the tracking and management of assets connected to the network, improving inventory management efficiency and operational security.
+            </p>
+            <p>
+              The application also provides automatic notifications for detecting disruptions or downtime, enabling the IT team to quickly respond and resolve issues, thus maintaining the stability and continuity of the company’s network operations.
+            </p>
+            <p>
+              With a user-friendly interface and comprehensive integration features, this application is the ideal solution for enhancing company productivity and improving response times to network-related issues.
+            </p>
+            <span class="badge bg-secondary badge-pill">Network Monitoring</span>
+            <span class="badge bg-secondary badge-pill">Asset Management</span>
+            <span class="badge bg-secondary badge-pill">Real-time Alerts</span>
+            <span class="badge bg-secondary badge-pill">Web App</span><br />
+            <a href="https://aplikasicekongkir.netlify.app/" class="read-more-btn link" target="_blank">Read More</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="post col-md-4 webapp col-10 mt-3 mt-md-0" >
+        <div class="card">
+          <img src="images/hitung.png" class="card-img-top" alt="..." />
+          <div class="card-body text-center">
+            <h4 class="card-title">Apps Kalkulator</h4>
+            <!-- <p class="card-text">A project that demonstrates an animation timeline using ReactJS for the front-end, ExpressJS for the back-end, PostgreSQL for the database, and Bootstrap for responsive design.</p> -->
+            <p class="card-text">A simple and interactive calculator app built with ReactJS. It provides basic arithmetic operations with smooth animations and a responsive design, ensuring a great user experience on both desktop and mobile devices.</p>
+
+            <span class="badge bg-secondary badge-pill">HTML&CSS+Bootstrapp</span>
+            <span class="badge bg-secondary badge-pill">JavaScript-Reactjs</span>
+            <span class="badge bg-secondary badge-pill mb-2">WebApp</span
+            ><br />
+            <a href="https://aplikasikalkulator.netlify.app/" class="read-more-btn link">Read More</a>
+          </div>
+        </div>
+      </div>
+      
+      
+        </div>
+        <div class="row justify-content-evenly mt-4 px-4">
+          
+   
+          <div class="container">
+            <div class="row">
+                <!-- First Certificate -->
+                <div class="post col-md-4 certificate all col-10 mt-3 mt-md-0">
+                    <div class="card">
+                        <img src="images/microsoftoffice.jpeg" class="card-img-top" alt="Microsoft Office Certificate" />
+                        <div class="card-body text-center">
+                            <h4 class="card-title">Certificate of Completion</h4>
+                            <p class="card-text">
+                                Proudly presented to <strong>Wahyu Hidayat</strong> for successfully completing the 
+                                <strong>"Microsoft Office Training Program"</strong>.
+                            </p>
+                            <p class="card-text">
+                                This certificate acknowledges the mastery of key Microsoft Office skills, including Word, Excel, and PowerPoint, aimed at enhancing productivity in professional and academic settings.
+                            </p>
+                            <span class="badge bg-secondary badge-pill">Microsoft Office</span><br />
+                            <a href="https://drive.google.com/file/d/16ZsltRwUgNGyWUJohV0ZKA6oiyIpUb1h/view?usp=sharing" class="read-more-btn link">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Second Certificate -->
+                <div class="post col-md-4 certificate all col-10 mt-3 mt-md-0">
+                    <div class="card">
+                        <img src="images/mern.jpeg" class="card-img-top" alt="Certificate of Completion for Full-Stack JavaScript Developer MERN: Website Event Bootcamp" />
+                        <div class="card-body text-center">
+                            <h4 class="card-title">Certificate of Completion</h4>
+                            <p class="card-text">
+                                Proudly presented to <strong>Wahyu Hidayat</strong> for successfully completing the 
+                                <strong>"Full-Stack JavaScript Developer MERN: Website Event Bootcamp"</strong> held on
+                                <strong>November 17, 2022</strong>.
+                            </p>
+                            <p class="card-text">
+                                This certificate recognizes the achievement of mastering web development skills using the MERN Stack 
+                                (MongoDB, Express.js, React.js, Node.js), including the development of an event website application.
+                            </p>
+                            <span class="badge bg-secondary badge-pill">Full-Stack JavaScript</span>
+                            <span class="badge bg-secondary badge-pill">MERN Stack</span>
+                            <span class="badge bg-secondary badge-pill mb-2">Bootcamp</span><br />
+                            <a href="https://drive.google.com/file/d/1w-9CF-XDKreKwfqsh-LNR42CGhNqSMbG/view" class="read-more-btn link">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Third Certificate -->
+                <div class="post col-md-4 certificate all col-10 mt-3 mt-md-0">
+                    <div class="card shadow-lg border-0">
+                        <img src="images/programkomputer.jpeg" class="card-img-top rounded-top" alt="Intensive Programming Course: Web & Mobile Development" />
+                        <div class="card-body text-center">
+                            <h4 class="card-title font-weight-bold">Intensive Programming Course: Web & Mobile Development</h4>
+                            <p class="card-text mt-3">
+                                This advanced training program is designed to equip participants with cutting-edge skills in web and mobile application development. The course leverages modern frameworks such as <strong>PHP (Laravel, CodeIgniter)</strong> and <strong>JavaScript (React.js, Node.js)</strong>, providing a comprehensive understanding of full-stack web development, mobile app development, and database management.
+                            </p>
+                            <div class="d-flex justify-content-center flex-wrap mt-3">
+                                <span class="badge bg-secondary me-2 mb-2">Full-Stack Web Development</span>
+                                <span class="badge bg-secondary me-2 mb-2">Mobile App Development</span>
+                                <span class="badge bg-secondary me-2 mb-2">React.js & Node.js</span>
+                                <span class="badge bg-secondary me-2 mb-2">PHP & Laravel</span>
+                                <span class="badge bg-secondary me-2 mb-2">Database Management</span>
+                                <span class="badge bg-secondary mb-2">Global Professional Training</span>
+                            </div>
+                            <a href="https://drive.google.com/file/d/1km1HOgnWGCtdds67TE9UO5jgXTMSYWbf/view?usp=sharing" class="read-more-btn link">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="row">
+                <!-- Fourth Certificate -->
+                <div class="post col-md-4 certificate all col-10 mt-3 mt-md-0">
+                    <div class="card shadow-lg border-0">
+                        <img src="images/udemy.jpeg" class="card-img-top rounded-top" alt="Udemy Full-Stack Development Certificate" />
+                        <div class="card-body text-center">
+                            <h4 class="card-title font-weight-bold">Certificate of Completion</h4>
+                            <p class="card-text mt-3">
+                                Awarded to <strong>Wahyu Hidayat</strong> for successfully completing the 
+                                <strong>"Full-Stack Development with React Native, Redux, and Express.js"</strong> program on Udemy.
+                            </p>
+                            <p class="card-text">
+                                This certificate acknowledges the completion of an intensive training program covering full-stack web and mobile application development using cutting-edge technologies such as <strong>React Native</strong> for mobile applications, <strong>React.js</strong> for web applications, <strong>Redux</strong> for state management, and <strong>Express.js</strong> for building robust backend systems. The course provided a deep understanding of building scalable, efficient, and modern applications.
+                            </p>
+                            <div class="d-flex justify-content-center flex-wrap mt-3">
+                                <span class="badge bg-secondary me-2 mb-2">React Native</span>
+                                <span class="badge bg-secondary me-2 mb-2">React.js</span>
+                                <span class="badge bg-secondary me-2 mb-2">Redux</span>
+                                <span class="badge bg-secondary me-2 mb-2">Express.js</span>
+                                <span class="badge bg-secondary me-2 mb-2">Full-Stack Development</span>
+                                <span class="badge bg-secondary mb-2">Udemy Certified</span>
+                            </div>
+                            <a href="https://drive.google.com/file/d/14f6HkbZu9s78oiF2YRaOGtirD0L4wRW7/view" class="read-more-btn link">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Fifth Certificate -->
+                <div class="post col-md-4 certificate all col-10 mt-3 mt-md-0">
+                    <div class="card shadow-lg border-0">
+                        <img src="images/aws.jpeg" class="card-img-top rounded-top" alt="Udemy Full-Stack Development Certificate" />
+                        <div class="card-body text-center">
+                            <h4 class="card-title font-weight-bold">Certificate of Completion</h4>
+                            <p class="card-text mt-3">
+                                Awarded to <strong>Wahyu Hidayat</strong> for successfully completing the 
+                                <strong>"Full-Stack Development with React Native, Redux, and Express.js"</strong> program on Udemy.
+                            </p>
+                            <p class="card-text">
+                                This certificate acknowledges the completion of an intensive training program covering full-stack web and mobile application development using cutting-edge technologies such as <strong>React Native</strong> for mobile applications, <strong>React.js</strong> for web applications, <strong>Redux</strong> for state management, and <strong>Express.js</strong> for building robust backend systems. The course provided a deep understanding of building scalable, efficient, and modern applications.
+                            </p>
+                            <div class="d-flex justify-content-center flex-wrap mt-3">
+                                <span class="badge bg-secondary me-2 mb-2">React Native</span>
+                                <span class="badge bg-secondary me-2 mb-2">React.js</span>
+                                <span class="badge bg-secondary me-2 mb-2">Redux</span>
+                                <span class="badge bg-secondary me-2 mb-2">Express.js</span>
+                                <span class="badge bg-secondary me-2 mb-2">Full-Stack Development</span>
+                                <span class="badge bg-secondary mb-2">Udemy Certified</span>
+                            </div>
+                            <a href="https://drive.google.com/file/d/14f6HkbZu9s78oiF2YRaOGtirD0L4wRW7/view" class="read-more-btn link">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+    
+  
+    
+      
+    
+    
+        
+         
+       
+        
+          
+        </div>
+      </div>
+    </section>
+ 
+
+
+    <!-- testimonial ends here -->
+
+    <!-- blog section starts -->
+    <!-- <section class="blog mt-5 pb-5" id="blog">
+      <div class="heading text-center pt-5">
+        <small>Latest News</small>
+        <h3>Blog & Articles</h3>
+      </div>
+      <div class="row justify-content-evenly px-4 mt-4" data-aos="fade-up">
+        <div class="blogpost col-md-4 col-10 mt-2 mt-md-0 game all">
+          <div class="card">
+            <img
+              src="images/2048game.png"
+              class="card-img-top rounded-4"
+              alt="..."
+            />
+            <div class="card-body px-4">
+              <small>By Pawan Kumavat</small
+              ><span class="ms-3">Mar 8,2022</span>
+              <h4 class="card-title">
+                <a href="">Quis autem vea eum iure reprehenderit</a>
+              </h4>
+              <p class="text-muted">
+                Dolor repellendus temporibus autem quibusdam officiis debitis
+                rerum nece aibus minima veniam.
+              </p>
+              <a href="#" class="read-more-btn link" data-bs-toggle="modal" data-bs-target="#exampleModal1">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="blogpost col-md-4 col-10 mt-5 mt-md-0 website all">
+          <div class="card">
+            <img
+              src="images/currency-converter.png"
+              class="card-img-top rounded-4"
+              alt="..."
+            />
+            <div class="card-body px-4">
+              <small>By Pawan Kumavat</small
+              ><span class="ms-3">Mar 8,2022</span>
+              <h4 class="card-title">
+                <a href="">Quis autem vea eum iure reprehenderit</a>
+              </h4>
+              <p class="text-muted">
+                Dolor repellendus temporibus autem quibusdam officiis debitis
+                rerum nece aibus minima veniam.
+              </p>
+              <a href="#" class="read-more-btn link" data-bs-toggle="modal" data-bs-target="#exampleModal2">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="blogpost col-md-4 col-10 mt-5 mt-md-0 webapp all">
+          <div class="card">
+            <img
+              src="images/dictionary.png"
+              class="card-img-top rounded-4"
+              alt="..."
+            />
+            <div class="card-body px-4">
+              <small>By Pawan Kumavat</small
+              ><span class="ms-3">Mar 8,2022</span>
+              <h4 class="card-title">
+                <a href="">Quis autem vea eum iure reprehenderit</a>
+              </h4>
+              <p class="text-muted">
+                Dolor repellendus temporibus autem quibusdam officiis debitis
+                rerum nece aibus minima veniam.
+              </p>
+              <a href="#" class="read-more-btn link" data-bs-toggle="modal" data-bs-target="#exampleModal3">Read More</a>
+            </div>
+          </div>
+        </div>
+        <!-- here we will make modals if Read more link is clicked the modal will popup -->
+        <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              
+                <button type="button" class="btn-c rounded-pill" data-bs-dismiss="modal"><i class="bi bi-x-circle-fill"></i></button>
+              
+              <div class="modal-body px-4">
+                <div class="img">
+                  <img src="images/2048game.png" class="img-fluid" alt="">
+                </div>
+                <div class="content mt-3">
+                  <small>Wahyu Hidayat</small
+                    ><span class="text-muted ms-2">Mar 8,2022</span>
+                  <h4 class="card-title mt-3">Quis autem vea eum iure reprehenderit</h4>
+                  <div class="social-links mt-4">
+                      <button href="" class="rounded-pill dribble">
+                        <i class="bi bi-dribbble"></i>
+                      </button>
+                      <button href="" class="rounded-pill whatsapp">
+                        <i class="bi bi-whatsapp"></i>
+                      </button>
+                      <button href="" class="rounded-pill behance">
+                        <i class="bi bi-behance"></i>
+                      </button>
+                  </div>
+                  <p class="text-muted mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tempor eros a tellus auctor, nec suscipit nunc dignissim. Ut suscipit gravida augue sed elementum. Sed sed luctus nisl. Donec scelerisque nisi in sodales mattis. Vestibulum suscipit odio ac enim blandit sollicitudin. Aliquam ultrices sem quis urna placerat interdum. Etiam rutrum, quam sagittis tristique mollis, libero arcu scelerisque erat, eget tincidunt eros diam quis nunc.</p>
+                </div>
+              </div>
+              <div class="heading px-2">
+                <h3 class="fs-3 ms-3">Leave A Comment</h3>
+              </div>
+              <div class="contact-form ms-3 mt-3 pb-4 px-2">
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="Name"
+                  />
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="E-mail"
+                  />
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="Mobile No."
+                  />
+                </div>
+                <div class="mb-3">
+                  <textarea
+                    class="form-control"
+                    id="exampleFormControlTextarea1"
+                    placeholder="Message"
+                    rows="5"
+                  ></textarea>
+                </div>
+                <button class="c-btn h-btn mt-3 py-2 px-4 rounded-pill">
+                  Submit
+                </button>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              
+                <button type="button" class="btn-c rounded-pill" data-bs-dismiss="modal"><i class="bi bi-x-circle-fill"></i></button>
+              
+              <div class="modal-body px-4">
+                <div class="img">
+                  <img src="images/currency-converter.png" class="img-fluid" alt="">
+                </div>
+                <div class="content mt-3">
+                  <small>By Pawan Kumavat</small
+                    ><span class="text-muted ms-2 ms-md-0">Mar 8,2022</span>
+                  <h4 class="card-title mt-3">Quis autem vea eum iure reprehenderit</h4>
+                  <div class="social-links mt-4">
+                      <button href="" class="rounded-pill dribble">
+                        <i class="bi bi-dribbble"></i>
+                      </button>
+                      <button href="" class="rounded-pill whatsapp">
+                        <i class="bi bi-whatsapp"></i>
+                      </button>
+                      <button href="" class="rounded-pill behance">
+                        <i class="bi bi-behance"></i>
+                      </button>
+                  </div>
+                  <p class="text-muted mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tempor eros a tellus auctor, nec suscipit nunc dignissim. Ut suscipit gravida augue sed elementum. Sed sed luctus nisl. Donec scelerisque nisi in sodales mattis. Vestibulum suscipit odio ac enim blandit sollicitudin. Aliquam ultrices sem quis urna placerat interdum. Etiam rutrum, quam sagittis tristique mollis, libero arcu scelerisque erat, eget tincidunt eros diam quis nunc.</p>
+                </div>
+              </div>
+              <div class="heading px-2">
+                <h3 class="fs-3 ms-3">Leave A Comment</h3>
+              </div>
+              <div class="contact-form ms-3 mt-3 pb-4 px-2">
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="Name"
+                  />
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="E-mail"
+                  />
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="Mobile No."
+                  />
+                </div>
+                <div class="mb-3">
+                  <textarea
+                    class="form-control"
+                    id="exampleFormControlTextarea1"
+                    placeholder="Message"
+                    rows="5"
+                  ></textarea>
+                </div>
+                <button class="c-btn h-btn mt-3 py-2 px-4 rounded-pill">
+                  Submit
+                </button>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              
+                <button type="button" class="btn-c rounded-pill" data-bs-dismiss="modal"><i class="bi bi-x-circle-fill"></i></button>
+              
+              <div class="modal-body px-4">
+                <div class="img">
+                  <img src="images/dictionary.png" class="img-fluid" alt="">
+                </div>
+                <div class="content mt-3">
+                  <small>By Pawan Kumavat</small
+                    ><span class="text-muted ms-2 ms-md-0">Mar 8,2022</span>
+                  <h4 class="card-title mt-3">Quis autem vea eum iure reprehenderit</h4>
+                  <div class="social-links mt-4">
+                      <button href="" class="rounded-pill dribble">
+                        <i class="bi bi-dribbble"></i>
+                      </button>
+                      <button href="" class="rounded-pill whatsapp">
+                        <i class="bi bi-whatsapp"></i>
+                      </button>
+                      <button href="" class="rounded-pill behance">
+                        <i class="bi bi-behance"></i>
+                      </button>
+                  </div>
+                  <p class="text-muted mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tempor eros a tellus auctor, nec suscipit nunc dignissim. Ut suscipit gravida augue sed elementum. Sed sed luctus nisl. Donec scelerisque nisi in sodales mattis. Vestibulum suscipit odio ac enim blandit sollicitudin. Aliquam ultrices sem quis urna placerat interdum. Etiam rutrum, quam sagittis tristique mollis, libero arcu scelerisque erat, eget tincidunt eros diam quis nunc.</p>
+                </div>
+              </div>
+              <div class="heading px-2">
+                <h3 class="fs-3 ms-3">Leave A Comment</h3>
+              </div>
+              <div class="contact-form ms-3 mt-3 pb-4 px-2">
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="Name"
+                  />
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="E-mail"
+                  />
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="Mobile No."
+                  />
+                </div>
+                <div class="mb-3">
+                  <textarea
+                    class="form-control"
+                    id="exampleFormControlTextarea1"
+                    placeholder="Message"
+                    rows="5"
+                  ></textarea>
+                </div>
+                <button class="c-btn h-btn mt-3 py-2 px-4 rounded-pill">
+                  Submit
+                </button>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- blog section ends here -->
+
+    <!-- contact section starts -->
+    <section class="contact py-5" id="contact">
+      <div class="heading text-center">
+        <small>Get in Touch</small>
+        <h3>Any Questions? Feel Free to Contact</h3>
+      </div>
+      <div class="row justify-content-evenly mt-5">
+        <div class="col-md-5 col-10 contact-details" data-aos="slide-right">
+          <div class="row justify-content-evenly">
+            <div class="col-1">
+              <i class="bi bi-geo-alt-fill"></i>
+            </div>
+            <div class="col-11">
+              <p>JLN SOEKARNO HATTA NO 11 PEKANBARU-RIAU</p>
+            </div>
+          </div>
+          <div class="row justify-content-evenly">
+            <div class="col-1">
+              <i class="bi bi-telephone-fill"></i>
+            </div>
+            <div class="col-11">
+              <p>+62 82284352106</p>
+            </div>
+          </div>
+          <div class="row justify-content-evenly">
+            <div class="col-1">
+              <i class="bi bi-send-fill"></i>
+            </div>
+            <div class="col-11">
+              <p>wahyuhidayaddd@gmail.com</p>
+            </div>
+          </div>
+          <div class="row justify-content-evenly">
+            <div class="col-1">
+              <i class="bi bi-globe-americas"></i>
+            </div>
+            <div class="col-11">
+              <p>wahyuhidayadd.netlify.app</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-5 col-10 mt-3 mt-md-0" data-aos="slide-left">
+          <div class="contact-form">
+            <form action="https://formspree.io/f/xeoqebkq" method="POST" id="demoForm" class="php-email-form">
+              <div class="mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="exampleFormControlInput1"
+                  placeholder="Name"
+                  name="name" required
+                />
+              </div>
+              <div class="mb-3">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleFormControlInput1"
+                  placeholder="E-mail"
+                  name="email" required
+                />
+              </div>
+              <div class="mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="exampleFormControlInput1"
+                  placeholder="Mobile No."
+                  name="mobile" required
+                />
+              </div>
+              <div class="mb-3">
+                <textarea
+                  class="form-control"
+                  id="exampleFormControlTextarea1"
+                  placeholder="Message"
+                  name="message"
+                  rows="5" required
+                ></textarea>
+              </div>
+              <button type="submit" class="c-btn h-btn mt-3 py-3 px-5 rounded-pill">
+                Submit
+              </button>
+            </form>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+    <!-- contact section ends here -->
+
+      <!-- now we will make back to top button when user click on it it will be redirected to top page  -->
+    <button
+      type="button"
+      class="btn btn-floating btn-lg rounded-pill"
+      id="btn-back-to-top"
+    >
+      <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <!-- footer section starts  -->
+    <footer class="text-center text-muted py-4">
+      <h3 class="text-white pt-4" data-aos="fade-up">Wahyu Hidayat</h3>
+      <div class="link-group mt-5" data-aos="fade-up">
+        <a href="#home">Home</a>
+        <div class="vr"></div>
+        <a href="#about">About</a>
+        <div class="vr"></div>
+        <a href="#service">Service</a>
+        <div class="vr"></div>
+        <a href="#portfolio">Portfolio</a>
+        <div class="vr"></div>
+        <a href="#blog">Blog</a>
+        <div class="vr"></div>
+     <a href="https://wa.me/6282284352106" target="_blank">Contact</a>
+
+      </div>
+      <div class="social-links mt-5" data-aos="fade-up">
+        <button href="" class="rounded-pill dribble">
+          <i class="bi bi-dribbble"></i>
+        </button>
+        <button href="" class="rounded-pill whatsapp">
+          <i class="bi bi-whatsapp"></i>
+        </button>
+        <button href="" class="rounded-pill behance">
+          <i class="bi bi-behance"></i>
+        </button>
+      </div>
+      <hr class="text-muted my-4" />
+
+      <p>Copyright 2024 Portfolio | All Rights Reserved.</p>
+    </footer>
+    <!-- footer section ends here -->
+
+      <!-- bootstrap javascript cdn link  -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- AOS library javascript link  -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      // initializing AOS library
+      AOS.init({
+        duration: 1000,
+        offset: 50,
+      });
+    </script>
+    <!-- custom js file linking -->
+    <script src="js/script.js"></script>
+    <script>
+      const form = document.getElementById('demoForm');
+    
+      form.addEventListener('submit', function(event) {
+        event.preventDefault(); // Mencegah pengalihan halaman
+    
+        fetch(form.action, {
+            method: 'POST',
+            body: new FormData(form),
+            headers: {
+                'Accept': 'application/json'
+            }
+        })
+        .then(response => {
+            if (response.ok) {
+                swal("Terima Kasih! 😊", "Formulir Anda telah berhasil dikirim. Customer service kami akan menghubungi Anda segera.", "success");
+                form.reset(); // Reset formulir setelah pengiriman
+            } else {
+                swal("Gagal!", "Gagal mengirim form. Silakan coba lagi.", "error"); // SweetAlert untuk gagal
+            }
+        })
+        .catch(error => {
+            console.error('Ada kesalahan:', error);
+            swal("Gagal!", "Gagal mengirim form. Silakan coba lagi.", "error"); // SweetAlert untuk error
+        });
+      });
+    </script>
+  </body>
+</html>
